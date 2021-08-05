@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @czp2
 - 👀 I’m interested in game&music&animation
-- 🌱 I’m currently learning front-end
-- 📫 How to reach me uniqueczp@163.com
+- 🌱 I’m currently learning front-end, and I have back-end knowleage
+- 📫 How to reach me: uniqueczp@163.com
 
 <!---
 czp2/czp2 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
