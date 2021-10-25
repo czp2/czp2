@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @czp2
 - 👀 I’m interested in game&music&animation
-- 🌱 I’m currently learning front-end, and I have back-end knowleage
+- 🌱 I’m currently a front-end developer, and I have back-end knowleage
 - 📫 How to reach me: uniqueczp@163.com
 
 <!---
