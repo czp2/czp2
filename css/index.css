@@ -1,0 +1,243 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.theme-container {
+    /* min-width: 1200px; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: calc(100% - 500px);
+    min-height: 150px;
+    max-height: 350px;
+}
+
+.search-box {
+    max-height: 160px;
+    padding: 20px;
+}
+
+.blank {
+    flex-grow: 1;
+    color: #4d5156;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+}
+
+.blank .language {
+    font-size: 12px;
+    color: #4d5156;
+    display: inline-block;
+    line-height: 28px;
+}
+
+.blank .language a {
+    padding: 0 3px;
+}
+
+.footer {
+    display: flex;
+    background: #f2f2f2;
+    border-top: 1px solid #dadce0;
+    padding: 0 20px;
+}
+
+.footer a {
+    font-size: 14px;
+    color: #70757a;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background: #f2f2f2;
+    border-top: 1px solid #dadce0;
+}
+
+.box-container {
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+    position: relative;
+}
+
+.btn-container {
+    height: 70px;
+    padding-top: 18px;
+}
+
+.search-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search-btn:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.box-container:hover,
+.bc-active-1,
+.bc-active {
+    border-color: rgba(223, 225, 229, 0);
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+}
+
+.bc-inputed {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.box-container .box-index {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
+}
+
+.box-container .search-list {
+    display: none;
+    position: absolute;
+    text-align: left;
+    top: 45px;
+    cursor: default;
+    user-select: none;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.box-container .search-list .ul-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 6px rgba(32, 33, 36, .28);
+    border: 0;
+    padding-bottom: 20px;
+}
+
+.box-container .search-list .ul-box ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.box-container .search-list .ul-box ul li {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.box-container .search-list .ul-box ul li.selected {
+    background-color: #f8f9fa;
+}
+
+.box-container .search-list .ul-box ul li:hover {
+    background-color: #f8f9fa;
+}
+
+.box-container .search-list .ul-box .xtSCL {
+    border-top: 1px solid #e8eaed;
+    margin: 0 20px 0 14px;
+    padding-bottom: 4px;
+}
+
+.box-container .box-index .img-box {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+}
+
+.box-container .box-index .img-clear {
+    visibility: hidden;
+    background: transparent;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    cursor: pointer;
+    height: 100%;
+    line-height: 44px;
+    outline: none;
+    padding: 0 12px;
+}
+
+.box-container .box-index .input-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.box-container .box-index .input-box #search {
+    height: 34px;
+    font-size: 16px;
+    flex: 100%;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/page.css">
+</head>
+
+<body>
+    <div class="theme-container">
+        <div class="blank-80">
+
+        </div>
+        <div class="header">
+            <form id="form" action="" method="get">
+                <div class="box-container">
+                    <div class="logo"><a href="./index.html" title="Google 首页" id="logo" data-hveid="8"><img
+                                class="jfN4p" src="./imgs/googlelogo_color_92x30dp.png" style="background:none"
+                                alt="Google" height="30" width="92"></a>
+                    </div>
+                    <div class="box-index">
+                        <div class="img-box">
+                            <img height="20" src="./imgs/search.png">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id="search" autocapitalize="off" autocomplete="off" autocorrect="off"
+                                autofocus="">
+                            <input type="text" id="a" style="display:none">
+                        </div>
+
+                        <div class="img-box img-clear">
+                            <img height="14" src="./imgs/clear.png">
+                        </div>
+                    </div>
+                    <div class="search-list">
+                        <div class="ul-box">
+                            <div class="xtSCL"></div>
+                            <ul id="ul-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="header-tab">
+            <div class="a-box">
+                <a href="#">
+                    <span>
+                        <svg focusable="false" viewBox="0 0 24 24">
+                            <path
+                                d="M16.32 14.88a8.04 8.04 0 1 0-1.44 1.44l5.76 5.76 1.44-1.44-5.76-5.76zm-6.36 1.08c-3.36 0-6-2.64-6-6s2.64-6 6-6 6 2.64 6 6-2.64 6-6 6">
+                            </path>
+                        </svg>
+                    </span>
+                    全部
+                </a>
+                <a href="#">
+                    <span>
+                        <svg focusable="false" viewBox="0 0 24 24">
+                            <path
+                                d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5">
+                            </path>
+                        </svg>
+                    </span>
+                    图片
+                </a>
+                <a href="#" class="actived">
+                    <span>
+                        <svg focusable="false" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M10 16.5l6-4.5-6-4.5"></path>
+                            <path fill="#ea4335" d="M20 12h2v7.5a2.5 2.5 0 0 1-2.5 2.5H12v-2h7a1 1 0 0 0 1-1v-7"></path>
+                            <path fill="#fbbc04" d="M20 12V5a1 1 0 0 0-1-1h-7V2h7.6A2.4 2.4 0 0 1 22 4.4V12h-2"></path>
+                            <path fill="#34a853"
+                                d="M12 20v2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2H12v2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7">
+                            </path>
+                        </svg>
+                    </span>
+                    视频
+                    <div class="active-bottom"></div>
+                </a>
+                <a href="#">
+                    <span>
+                        <svg focusable="false" viewBox="0 0 24 24">
+                            <path
+                                d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2">
+                            </path>
+                        </svg>
+                    </span>
+                    新闻
+                </a>
+                <a href="#">
+                    <span>
+                        <svg focusable="false" viewBox="0 0 16 16">
+                            <path
+                                d="M7.503 0c3.09 0 5.502 2.487 5.502 5.427 0 2.337-1.13 3.694-2.26 5.05-.454.528-.906 1.13-1.358 1.734-.452.603-.754 1.508-.98 1.96-.226.452-.377.829-.904.829-.528 0-.678-.377-.905-.83-.226-.451-.527-1.356-.98-1.959-.452-.603-.904-1.206-1.356-1.734C3.132 9.121 2 7.764 2 5.427 2 2.487 4.412 0 7.503 0zm0 1.364c-2.283 0-4.14 1.822-4.14 4.063 0 1.843.86 2.873 1.946 4.177.468.547.942 1.178 1.4 1.79.34.452.596.99.794 1.444.198-.455.453-.992.793-1.445.459-.61.931-1.242 1.413-1.803 1.074-1.29 1.933-2.32 1.933-4.163 0-2.24-1.858-4.063-4.139-4.063zm0 2.734a1.33 1.33 0 11-.001 2.658 1.33 1.33 0 010-2.658">
+                            </path>
+                        </svg>
+                    </span>
+                    地图
+                </a>
+                <a href="#">
+                    <span>
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                            </path>
+                        </svg>
+                    </span>更多
+                </a>
+            </div>
+            <div class="as-btn-box">
+                <span class="as-btn">工具</span>
+            </div>
+        </div>
+        <div class="result-total">
+
+        </div>
+        <div class="main">
+            <div class="main-left">
+                <div id="result"></div>
+                <div id="pagination">
+                    <table class="pagi-table">
+                        <tbody>
+                            <tr id="pagi-tr" valign="top">
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="more-box">
+                <div>
+                    <span class="btns actived">概览</span>
+                    <span class="btns">演员表</span>
+                    <span class="btns">评价</span>
+                    <span class="btns">预告片和剪辑</span>
+                </div>
+                <div class="tip">用户还搜索了</div>
+                <div id="more">
+                </div>
+                <div class="more-btn">
+                    <span>查看更多</span>
+                    <span class="arrow">
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="search-box">
+                
+                <div class="btn-container">
+                    <center>
+                        <input class="search-btn" value="Google 搜索" aria-label="Google 搜索" name="btnK" role="button"
+                            type="submit">
+                        <input class="search-btn" value="&nbsp;手气不错&nbsp;" aria-label="&nbsp;手气不错&nbsp;" name="btnI"
+                            type="submit">
+                    </center>
+                </div>
+            </div> -->
+        <!-- <div class="blank">
+            <div class="language">
+                Google提供：<a href="">简体中文</a>
+            </div>
+        </div> -->
+        <div class="blank">
+
+        </div>
+        <div class="footer">
+            <a href="">关于Google</a>
+            <a href="">广告</a>
+            <a href="">商务</a>
+            <a href="">谷歌的运作方式</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <script src="//cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script> -->
+    <script type="text/javascript">
+        window.onload = (event) => {
+            let [total, page, rows] = [0, 1, 10]
+            let timer = null
+            let currentIndex = -1
+            let resultTotal = 0
+            let useTime = 0
+            let currentQ = 'hello'
+
+            // if (!$('#search').val()) {
+            //     $('#pagination').hide()
+            //     $('.more-box').hide()
+            // }
+            if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+                $('.more-box').hide()
+            }
+            // currentQ = window.location
+            if (window.location.search) {
+                const temp = window.location.search.split('?')[1].split('=')[1]
+                currentQ = decodeURI(temp)
+                $('#search').val(currentQ)
+                getResult(currentQ)
+            }
+            // if (sessionStorage.getItem('q')) {
+            //     $('#search').val(sessionStorage.getItem('q'))
+            //     // sessionStorage.setItem('q', '')
+            // }
+            function replaceLocation(q) {
+                window.location.search = `?q=${q}`;
+                // location.href = `./page.html?q=${q}`
+            }
+            function getsearchlist(q) {
+                if (q) {
+                    $('.img-clear').css('visibility', 'visible')
+                    if (timer) return
+                    timer = setTimeout(() => {
+                        $.ajax('https://api.haoweilai.net/search/getsearchpromote',
+                            {
+                                data: { q },
+                                success: (res) => {
+                                    if (res.data.length) {
+                                        $('.box-container').addClass('bc-inputed')
+                                        $('.search-list').show()
+                                        let html = ''
+                                        $('#ul-list li').remove()
+                                        if (res.code == 200 && res.data) {
+                                            res.data.forEach(item => {
+                                                html += `<li>${item.data_name}</li>`
+                                            });
+                                            $('#ul-list').append(html)
+                                        }
+                                    } else {
+                                        $('#ul-list li').remove()
+                                        $('.box-container').removeClass('bc-inputed')
+                                        $('.search-list').hide()
+                                    }
+                                },
+                                error: (err) => {
+                                    $('#ul-list li').remove()
+                                },
+                                complete: () => {
+                                    timer = null
+                                }
+                            }
+
+                        )
+                    }, 300)
+                } else {
+                    $('#ul-list li').remove()
+                    $('.box-container').removeClass('bc-inputed')
+                    $('.search-list').hide()
+                    $('.img-clear').css('visibility', 'hidden')
+                }
+            }
+            function getResult(q) {
+                if (!q) return
+                const time1 = new Date().getTime()
+                $.ajax('https://api.haoweilai.net/search/getsearchlist',
+                    {
+                        data: { q, page, rows },
+                        success: (res) => {
+                            const time2 = new Date().getTime()
+                            useTime = ((time2 - time1) / 1000).toFixed(2)
+                            let html = ''
+                            let html1 = ''
+                            let html2 = ''
+                            $('#result .result-box').remove()
+                            $('#pagi-tr td').remove()
+                            $('#more>a').remove()
+                            $('#ul-list li').remove()
+                            $('.box-container').removeClass('bc-inputed')
+                            $('.search-list').hide()
+                            $('.img-clear').css('visibility', 'hidden')
+                            // $('#pagination').show()
+                            // $('.more-box').show()
+                            if (res.code == 200 && res.data) {
+                                total = res.count
+                                // 分页
+                                if (total / rows > 1) {
+                                    let totalPage = (total / rows) + 1
+                                    let leftPage = 1
+                                    let rightPage
+                                    if (page == 1) {
+                                        rightPage = (leftPage + 3) > totalPage ? totalPage : leftPage + 3
+                                    }
+                                    else {
+                                        rightPage = totalPage <= 10 ? totalPage : 10
+                                    }
+                                    if (page == 1) {
+                                        html1 += `
+                                    <td>
+                                        <span class="pagi-google" style="background:url(./imgs/nav_logo321_hr.webp) no-repeat;background-position:-24px 0;background-size:167px;width:28px"></span>
+                                    </td>
+                                    `
+                                    } else {
+                                        html1 += `
+                                    <td id="pnpre">
+                                        <a href="javascript:;" style="text-align:left">
+                                            <span class="pagi-google"
+                                                style="background:url(./imgs/nav_logo321_hr.webp) no-repeat;background-position:0 0;background-size:167px;width:53px;float:right">
+                                            </span>
+                                            <span style="display:block;margin-right:35px;clear:right">上一页</span>
+                                        </a>
+                                    </td>
+                                    `
+                                    }
+                                    for (let i = leftPage; i <= rightPage; i++) {
+                                        if (i == page) {
+                                            html1 += `
+                                        <td class="pagi-cur">
+                                            <span class="pagi-google"
+                                                style="background:url(./imgs/nav_logo321_hr.webp) no-repeat;background-position:-53px 0;background-size:167px;width:20px">
+                                            </span>
+                                            <span>${i}</span>
+                                        </td>
+                                        `
+                                        } else {
+                                            html1 += `
+                                            <td class="pagi-link">
+                                                <a href="javascript:;">
+                                                    <span class="pagi-google"
+                                                        style="background:url(./imgs/nav_logo321_hr.webp) no-repeat;background-position:-74px 0;background-size:167px;width:20px">
+                                                    </span>
+                                                    <span class="text">${i}</span>
+                                                </a>
+                                            </td>
+                                            `
+                                        }
+                                    }
+                                    if (page == 10) {
+                                        html1 += `
+                                        <td>
+                                            <span class="pagi-google" style="background:url(./imgs/nav_logo321_hr.webp) no-repeat;background-position:-96px 0;background-size:167px;width:61px"></span>
+                                        </td>
+                                        `
+                                    } else {
+                                        html1 += `
+                                        <td id="pnnext">
+                                            <a href="javascript:;" style="text-align:left">
+                                                <span class="pagi-google"
+                                                    style="background:url(./imgs/nav_logo321_hr.webp) no-repeat;background-position:-96px 0;background-size:167px;width:71px">
+                                                </span>
+                                                <span style="display:block;margin-left:53px">下一页</span>
+                                            </a>
+                                        </td>
+                                        `
+                                    }
+                                    $('#pagi-tr').append(html1)
+                                    // 结果总数&用时
+                                    $('.result-total').text(`找到约 ${total} 条结果 （用时 ${useTime} 秒）`)
+                                    // 结果内容
+                                    res.data.playData.forEach(item => {
+                                        html += `
+                                <div class="result-box">
+                                    <a href="${item.data_url}">
+                                        <h3 class=" data_name">${item.data_name}</h3>
+                                    </a>
+                                    <div class="result-detail">
+                                        <a href="${item.data_url}">
+                                            <div class="data_img">
+                                                <img src="${item.data_img}"
+                                                    referrer="no-referrer" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="detail-box">
+                                            <div class="data_detail">
+                                                ${item.data_detail}
+                                            </div>
+                                            <div class="data-params">
+                                                <div class="data_type">
+                                                    <span class="data_country">${item.data_country}</span> · ${item.data_type}
+                                                </div>
+                                                <div class="data_year">
+                                                    ${item.data_year}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                `
+                                    });
+                                    $('#result').append(html)
+                                    // 更多内容
+                                    const hot_recommend = res.data.movie.hot_recommend
+                                    if (hot_recommend.length) {
+                                        hot_recommend.forEach(item => {
+                                            html2 += `
+                                        <a href="${item.movie_img}">
+                                            <div class="movie">
+                                                <div class="movie_img">
+                                                    <img src="${item.movie_img}"
+                                                        referrer="no-referrer" alt="">
+                                                </div>
+                                                <div class="movie_name">
+                                                    ${item.movie_name}
+                                                </div>
+                                            </div>
+                                        </a>
+                                        `
+                                        });
+                                        $('#more').append(html2)
+                                    }
+                                }
+                            }
+                        },
+                        error: (err) => {
+                            $('#result .result-box').remove()
+                            $('#pagi-tr td').remove()
+                            $('#more>a').remove()
+                        }
+                    }
+                )
+            }
+            function handleReset() {
+                total = 0
+                page = 1
+                rows = 10
+            }
+            $('#pagi-tr').on('click', 'td', (e) => {
+                e.preventDefault()
+                const target = $(e.target).parent().parent()[0]
+                if (target.id == 'pnpre') {
+                    if (page < 1) return
+                    page--
+                } else if (target.id == 'pnnext') {
+                    if (page >= 10) return
+                    page++
+                } else if (target.className == 'pagi-link') {
+                    page = $(target).children().find('.text').text()
+                }
+                // window.scrollTo(0, 0)
+                getResult($('#search').val())
+            })
+            $('#search').on('click', function (e) {
+                getsearchlist($(this).val())
+            })
+            $('#search').on('input', function (e) {
+                getsearchlist($(this).val())
+            })
+            $('#ul-list').on('click', function (e) {
+                e.preventDefault()
+                if (e.target.nodeName == 'LI') {
+                    $('#search').val($(e.target).text())
+                    handleReset()
+                    replaceLocation($('#search').val())
+                    // getResult($(e.target).text());
+                }
+            })
+            $('#search').on('keydown', (e) => {
+                // if (!$('#ul-list').children('li').length) return
+                if (e.key == "Enter") {
+                    e.preventDefault()
+                    handleReset()
+                    if (!$('#search').val()) {
+                        window.location = `./index.html`;
+                    } else replaceLocation($('#search').val())
+                    // getResult($('#search').val())
+                    return
+                }
+                if (e.key != "ArrowDown" && e.key != "ArrowUp") return
+                e.preventDefault()
+                $('#ul-list li.selected').removeClass('selected')
+                if (e.key == "ArrowDown") {
+                    currentIndex++
+                } else if (e.key == "ArrowUp") {
+                    currentIndex--
+                }
+                if (currentIndex < 0) {
+                    currentIndex = $('#ul-list').children('li').length - 1
+                }
+                if (currentIndex >= $('#ul-list').children('li').length) {
+                    currentIndex = 0
+                }
+                let current = $($('#ul-list li')[currentIndex])
+                current.addClass('selected')
+                $('#search').val(current.text())
+            })
+            $('.img-clear').on('click', function (e) {
+                $('#search').val('')
+                $('.box-container').removeClass('bc-active')
+                $('.box-container').removeClass('bc-inputed')
+                $('.search-list').hide()
+                $('.img-clear').css('visibility', 'hidden')
+            })
+            $(document).on('click', function (e) {
+                const parents = $(e.target).parents()
+                let flag = true
+                for (const key in parents) {
+                    if (Object.hasOwnProperty.call(parents, key)) {
+                        const element = parents[key];
+                        if (element.id === 'form') {
+                            flag = false
+                        }
+                    }
+                }
+                if (flag) {
+                    $('.box-container').removeClass('bc-active')
+                    $('.box-container').removeClass('bc-inputed')
+                    $('.search-list').hide()
+                }
+            })
+        };
+    </script>
+</body>
+
+</html>
