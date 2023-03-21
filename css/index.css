@@ -28,12 +28,19 @@ a:hover {
 .logo-box {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    /* justify-content: end; */
     align-items: center;
     height: calc(100% - 500px);
     min-height: 150px;
     max-height: 350px;
 }
+
+.logo-box .logo {
+    height: 100%;
+    max-height: 92px;
+    margin-top: auto;
+}
+
 
 .search-box {
     max-height: 160px;
